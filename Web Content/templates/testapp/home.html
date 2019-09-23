@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <link rel="stylesheet" type="text/css" href="{% static 'css/demo.css'%}">
+ 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script
+  src="http://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>  
+<body>
+<nav  class="navbar navbar-deafault navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+			<a  class="navbar-brand" href="/">SmartIrrigationSystem</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="/weather">WeatherForcast</a></li>
+				<li><a href="/motor">MoterSwitch</a></li>
+				<li><a href="/irrigation">irrigation</a></li>
+				<li><a href="/croptype">date</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/accounts/login">Login</a></li>
+				<li><a href="/godown1">Godown</a></li>
+				<li><a href="/accounts/logout">Logout</a></li>
+				<li><a href="#">Welcome {{username|title}}</a></li>
+			</ul>
+	</div>
+</div>
+</nav>
+<div class="container">
+	<div class="jumbotron">
+<h1 id="h1">Field Current Condition</h1>
+<h2>Crop type:<span id='t'></span></h2>
+<h2 >Tempratuere:<span id="p">20</span>Kelvin</h2>
+<h2 >Moisture:<span id="q">20</span>%</h2>
+<h2 >Humidity:<span id="r">2</span>%</h2>
+<h2 >WIND{{b}}Km/hr</h2>
+</div>
+</div>
+<script type="text/javascript" src="{%static 'js/img.js' %}"></script>
+</body>
+</html>

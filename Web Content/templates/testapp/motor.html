@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+{% block body_block%}
+<div class="container">
+	<div class="jumbotron">
+		<h2>Moter Button</h2>
+                      {%if k == 1 %}
+                    <a href="/stop" class="btn btn-primary"><h2 id="a">OFF</h2></a>
+                    {%else%}
+                    <a href="/stop" class=" btn btn-primary"><h2 id="a">ON</h2></a>
+                    {%endif%}
+</div>
+</div>
+{% endblock%}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+{% block body_block%}
+<div class="container">
+	<div class="jumbotron">
+	<H1>{{name1|title}} your stored crop detail are</H1>
+<table>
+	<thead>
+		<th>Cropname</th>
+		<th>Cropuantity(quintal)</th>
+		<th>update</th>
+		<th>delete</th>
+	</thead>
+	{%for i in qs%}
+	{% if name1 == i.name %}
+	<tr>
+		<td>{{i.cropname}}</td>
+		<td>{{i.cropquantity}}</td>
+		<td><a href="/update/{{i.id}}">Update</a></td>
+		<td><a href="/delete/{{i.id}}">Delete</a></td>
+	</tr>
+	{%endif%}
+	{%endfor%}
+
+</table>
+</div>
+</div>
+
+{% endblock %}

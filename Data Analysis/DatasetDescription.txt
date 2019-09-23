@@ -1,0 +1,25 @@
+1. Title of Database: Crops Data
+
+2. Sources:
+	(a) Origin owners Of Database:
+	Department of Computer Application
+	National Institute Of Technology, Raipur
+	(contact:Parvesh Bansal,Parveshbansal47535@gmail.com)
+	(b) Donor of database:
+		Jitendar Bhakar(Bsc agriculture 4th year,HAU,Hisar)
+3. Past Usage:
+	Dataset was used in All India Research Championship(AIRC) at (IIT Bombay)
+4. Relevant Information Paragraph:
+   Data is used for calculate amount of water need for irrigation
+5. Attribute information:
+After study we found that crop life cycle have five stage(duration period) is differ by crop to crop(like wheat 170,maize 100 days),ad ther is need of water to crop vary in every stage and crop to crop.
+For example if we consider wheat crop
+For first stage amount of water is needed  50-60 mm(5% of total water need for irrigation)
+For 2nd stage amount of water is needed  200-250 mm(20% of total water need for irrigation)
+For 3rd stage amount of water is needed  400-450 mm(40% of total water need for irrigation)
+For fourth stage amount of water is needed  400-450 mm(30% of total water need for irrigation)
+For fifth stage amount of water is needed  100-150 mm(5% of total water need for irrigation)
+Total water need for wheat is 1200-1400mm for raedy.
+Stage is depend of no passed days after sowing.
+Then after pass through data analysis part. It produced output amount of water need to crop right now.
+	

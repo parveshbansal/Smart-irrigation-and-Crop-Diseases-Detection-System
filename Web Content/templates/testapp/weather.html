@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+{% block body_block%}
+<div class="container">
+	<div class="jumbotron">
+<h1>Weather forcast of next 5 day</h1>
+<table>
+	<thead>
+		<th>Date</th>
+		<th>Humidity(%)</th>
+		<th>Temp(C)</th>
+		<th>Rainfall(mm)</th>
+	</thead>
+{% for result in a %}
+<tr>
+  {% for elem in result %}
+    <td>{{elem}}</td>
+  {% endfor %}
+ </tr>
+{% endfor %}
+</table>
+</div>
+</div>
+{% endblock%}

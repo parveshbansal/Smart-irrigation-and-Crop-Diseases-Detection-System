@@ -1,0 +1,25 @@
+1. Title of Database:Plant Disease Leaf
+
+2. Sources:
+	(a) Origin owners Of Database:
+	Department of Computer Application
+	National Institute Of Technology, Raipur
+	(contact:ParveshBansal,Parveshbansal47535@gmail.com)
+	(b) Donor of database:
+		Kesri verma mam(Assistant Professors Dept of MCA,NIT Raipur)		
+3. Past Usage:
+	Dataset was used in All India Research Championship(AIRC) at (IIT Bombay)
+4. Relevant Information Paragraph:
+
+   Dataset can be used to train the CNN model which will
+   predict whether thier is any disease in crop on not based on custom image input by user.
+
+5.Thier are Thirteen kind of dataset aviable divided into Four Catagory:
+1.Insects of wheat
+2.Insects of Rice
+3.Tomato Leaf data:
+	-Healthy Leaf
+	-Unhealthy Leaf
+4.Potato Leaf data:
+	-Healthy Leaf
+	-Unhealthy Leaf

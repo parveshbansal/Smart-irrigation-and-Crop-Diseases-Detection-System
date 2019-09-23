@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+{% block body_block%}
+<div class="container">
+	<div class="jumbotron">
+<form method="post">
+{{form.as_p}}
+{% csrf_token %}
+<input type="submit" class="btn btn-primary" name="" value="Addcrop" >
+</form>
+</div>
+</div>
+
+{% endblock %}

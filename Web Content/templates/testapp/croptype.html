@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+{% block body_block%}
+<div class="container">
+		<div class="jumbotron">
+<h1>Please Choose The Crop Sown in Your Field</h1>
+<form action="/date">
+	{{form.as_p}}
+	{%csrf_token%}
+	<input type="submit" name="" class="btn btn-primary btn-lg" value="Sumbit">
+</form>
+	</div>
+</div>
+{% endblock%}
